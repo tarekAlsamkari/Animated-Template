@@ -1,0 +1,189 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    padding:0;
+    margin: 0%;
+    font-family: 'Clicker Script', cursive;
+}
+
+.hero{
+    background-image: url(/assets/images/home2.jpg);
+    background-size:cover ;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: #28518a;
+    padding: 10px 25px;
+    background: transparent;
+    border:1.5px solid #28518a;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Tulpen One', cursive;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+button:hover{
+    color: #28518a;
+    padding: 10px 25px;
+    background: #fff;
+    border:1.5px solid #28518a;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Tulpen One', cursive;
+    font-size: 25px;
+    transition: 2s;
+    font-weight: 700;
+}
+
+.content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+h1{
+    font-size:  80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    color: #28518a;
+}
+small{
+    font-size: 30px;
+    color: #28518a;
+    font-weight: 700;
+}
+.content span{
+    color: rgb(172 44 51);
+    font-size: 57px;
+}
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(rgb(91 34 49), rgb(85 26 42));
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0 ;
+    cursor: pointer;
+}
+.social-links img, .useful-links img{
+    width: 32px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom:80px;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+}
+.footer-nav{
+    width: 100%;
+    height: 4vh;
+    position: absolute;
+    bottom: 0;
+
+}
+.footer-nav h4{
+text-align: center;
+font-size: 22px;
+color: #ac2c33;
+font-family: 'Righteous', cursive;
+margin-top:7px;
+font-weight: lighter;
+margin-left: 70%;
+
+}
+.footer-nav span{
+    text-align: center;
+font-size: 23px;
+color:rgb(117 158 195);
+font-family: 'Righteous', cursive;
+margin-top:7px;
+font-weight: lighter;
+
+}
